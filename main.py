@@ -11,6 +11,4 @@ with open(filename, "r") as file:
 with open(filename, 'w') as file:
     for line in content:
         file.write(f"{line}\n")
-
-if __name__ == '__main__':
-    print(content)
+        print(line)
