@@ -8,4 +8,7 @@ with open(filename, "r") as file:
     content.sort()
     print(content)
 
-
+with open('your_file.txt', 'w') as file:
+    for line in content:
+        file.write(f"{line}\n")
+    print(content)
