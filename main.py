@@ -2,13 +2,15 @@
 import sys
 
 filename = sys.argv[1]
+content = list()
 
 with open(filename, "r") as file:
     content = file.read().splitlines()
     content.sort()
-    print(content)
 
 with open('your_file.txt', 'w') as file:
     for line in content:
         file.write(f"{line}\n")
+
+if __name__ == '__main__':
     print(content)
