@@ -8,7 +8,7 @@ with open(filename, "r") as file:
     content = file.read().splitlines()
     content.sort()
 
-with open('your_file.txt', 'w') as file:
+with open(filename, 'w') as file:
     for line in content:
         file.write(f"{line}\n")
 
